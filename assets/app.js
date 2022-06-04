@@ -1,6 +1,6 @@
-let day=document.getElementById('day').value;
-let month=document.getElementById('month').value;
-let year=document.getElementById('year').value;
+let day=document.getElementById('#day').value;
+let month=document.getElementById('#month').value;
+let year=document.getElementById('#year').value;
 
 
 let date = new Date();
@@ -10,12 +10,12 @@ let month2 = 1 + date.getMonth();
 let year2 = date.getFullYear();
 let  mon = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-if(day > day2){
+if (day > day2){
     day2 = day2 + mon[month2 - 1];
     month2 = month2 -1;
 }
 
-if(month > month2){
+if (month > month2){
     month2 = month2 + 12;
     year2 = year2 - 1;
 }
